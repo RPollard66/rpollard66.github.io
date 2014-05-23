@@ -1,0 +1,28 @@
+﻿@model AppLabs.DTOs.Level1.FlooringTotals
+
+@{
+    ViewBag.Title = "FlooringDisplay";
+}
+
+<h1 style="color:ghostwhite ">Flooring Cost</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+            <li>@Html.ActionLink("Flooring Calculator", "FlooringRequest", "Level1")</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="text-center">
+
+    <p>The cost for materials is @String.Format("{0:C}", @Model.MaterialCost)</p>
+    <p>The cost for labor is @String.Format("{0:C}", @Model.LaborCost)</p><br/>
+    <p>Total cost is @String.Format("{0:C}", @Model.TotalCost)</p>
+
+    </div>

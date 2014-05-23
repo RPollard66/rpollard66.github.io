@@ -1,0 +1,40 @@
+﻿@model AppLabsMVC.Models.Level4.NumericRequest
+
+@{
+    ViewBag.Title = "WriteOutNumber";
+}
+
+<h1 style="color:ghostwhite ">Write Out Numbers</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-10">
+        <h4>Choose a three digit integer</h4>
+
+        @using (Html.BeginForm())
+        {
+
+            @Html.EditorFor(n => n.InputNum)
+
+            <button type="submit" class="btn btn-success">Submit</button>
+        }
+
+    </div>
+
+</div>
+
+<blockquote style="margin-top: 15px">
+    <p>In this app, you can enter any number from 1-999 and convert it into words.</p>
+    
+</blockquote>

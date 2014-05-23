@@ -1,0 +1,5 @@
+C:\GitHub\April2014DotNet\Samples\AddressBook\AddressBook.DTOs\bin\Debug\AddressBook.DTOs.dll
+C:\GitHub\April2014DotNet\Samples\AddressBook\AddressBook.DTOs\bin\Debug\AddressBook.DTOs.pdb
+C:\GitHub\April2014DotNet\Samples\AddressBook\AddressBook.DTOs\obj\Debug\AddressBook.DTOs.csprojResolveAssemblyReference.cache
+C:\GitHub\April2014DotNet\Samples\AddressBook\AddressBook.DTOs\obj\Debug\AddressBook.DTOs.dll
+C:\GitHub\April2014DotNet\Samples\AddressBook\AddressBook.DTOs\obj\Debug\AddressBook.DTOs.pdb

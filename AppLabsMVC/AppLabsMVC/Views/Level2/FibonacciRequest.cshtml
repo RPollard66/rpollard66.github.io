@@ -1,0 +1,37 @@
+﻿@model AppLabsMVC.Models.Level2.FibonacciRequest
+
+@{
+    ViewBag.Title = "FibonacciRequest";
+}
+
+<h1 style="color:ghostwhite ">Fibonacci Sequence</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+        </ul>
+
+    </div>
+</div>
+
+@using (Html.BeginForm("DisplayFibonacciSequence", "Level2", FormMethod.Post, new { role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="text-center">
+
+        @Html.EditorFor(model => model.num)
+
+        <input type="submit" value="Display" class="btn btn-default" />
+    </div>
+
+}
+
+<blockquote style="margin-top: 15px">
+    <p>This app prints out n-terms of the Fibonacci sequence.</p>
+</blockquote>

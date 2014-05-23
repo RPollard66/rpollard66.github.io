@@ -1,0 +1,5 @@
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.DTOs\bin\Debug\AppLabs.DTOs.dll
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.DTOs\bin\Debug\AppLabs.DTOs.pdb
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.DTOs\obj\Debug\AppLabs.DTOs.csprojResolveAssemblyReference.cache
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.DTOs\obj\Debug\AppLabs.DTOs.dll
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.DTOs\obj\Debug\AppLabs.DTOs.pdb

@@ -1,0 +1,43 @@
+﻿@model AppLabsMVC.Models.Level1.TipCalculatorRequest
+
+@{
+    ViewBag.Title = "TipCalculator";
+}
+
+<h1 style="color:ghostwhite ">Tip Calculator</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>           
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+        </ul>
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-1">
+        @using (Html.BeginForm("TipCalculator", "Level1", FormMethod.Post, new { role = "form" }))
+        {
+            @Html.ValidationSummary()
+            <div class="form-group">
+                <label for="MealTotal">Meal Amount</label>
+                @Html.TextBoxFor(m => m.MealTotal, new { @class = "form-control", placeholder = "Enter meal amount" })
+            </div>
+            <div class="form-group">
+                <label for="TipPercent">Tip Percent</label>
+                @Html.TextBoxFor(m => m.TipPercent, new { @class = "form-control", placeholder = "Enter tip percent" })
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        }
+    </div>
+</div>
+
+<blockquote style="margin-top: 15px">
+    <p>This app computes your total meal cost given your meal amount and the percent tip you would like to leave.</p>
+
+</blockquote>

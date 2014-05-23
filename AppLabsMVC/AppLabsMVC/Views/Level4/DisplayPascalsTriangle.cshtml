@@ -1,0 +1,56 @@
+﻿@model AppLabs.DTOs.Level4.Triangle
+
+
+@{
+    ViewBag.Title = "PascalsTriangle";
+}
+
+<h1 style="color:ghostwhite ">Pascal's Triangle</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+            <li>@Html.ActionLink("Pascals Triangle", "NumRowsRequest", "Level4")</li>
+
+        </ul>
+
+    </div>
+</div>
+
+
+
+<div class="text-center">
+
+
+    @foreach (var row in Model.Elements)
+    {
+
+        <p>
+            @foreach (var col in row)
+            {
+
+
+                <span style="font-size: 24px; margin: 10px 10px 10px 10px">  @col </span>
+
+            }
+        </p>
+    }
+    
+</div>
+
+<blockquote style="margin-top: 15px">
+    <p>This app displays Pascal's Triangle given the number of rows to display.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+

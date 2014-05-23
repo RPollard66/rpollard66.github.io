@@ -1,0 +1,29 @@
+﻿@model AppLabs.DTOs.Level2.PalindromeResult
+@{
+    ViewBag.Title = "PalindromeVerdict";
+}
+
+<h1 style="color:ghostwhite ">Palindrome</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+            <li>@Html.ActionLink("Palindrome", "PalindromeQuery", "Level2")</li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+    <div class="text-center">
+        <span style="font-size: 24px">
+            @Html.DisplayFor(model => model.Verdict)
+
+        </span>
+    </div>
+

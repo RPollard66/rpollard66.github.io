@@ -1,0 +1,14 @@
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\FlooringProgram.UI.exe.config
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\obj\Debug\FlooringProgram.UI.csprojResolveAssemblyReference.cache
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\FlooringProgram.UI.exe
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\FlooringProgram.UI.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\FlooringProgram.Data.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\FlooringProgram.Models.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\FlooringPrograms.Operations.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\FlooringProgram.Data.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\FlooringProgram.Models.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\FlooringPrograms.Operations.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\obj\Debug\FlooringProgram.UI.exe
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\obj\Debug\FlooringProgram.UI.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\Ninject.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.UI\bin\Debug\Ninject.xml

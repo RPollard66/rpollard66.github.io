@@ -1,0 +1,2 @@
+OrderNumber|CustomerName|State|TaxPercent|ProductType|Area|CostPerSquareFoot|LaborCostPerSquareFoot|MaterialCost|LaborCost|Tax|Total
+1|Smith|OH|0.10|Carpet|10|2|5|20|50|2.00|72.00

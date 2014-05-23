@@ -1,0 +1,66 @@
+﻿@model AppLabs.DTOs.Level1.FlooringValues
+
+@{
+    ViewBag.Title = "FlooringRequest";
+}
+
+<h1 style="color:ghostwhite ">Flooring Calculator</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+        </ul>
+
+    </div>
+</div>
+
+@using (Html.BeginForm("FlooringDisplay", "Level1", FormMethod.Post, new { role = "form" })) 
+    {
+        @Html.AntiForgeryToken()
+        
+        <div class="form-horizontal">
+            <h4>Please enter required values</h4>
+            <hr />
+            @Html.ValidationSummary(true)
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.Width, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Width)
+                    @Html.ValidationMessageFor(model => model.Width)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.Length, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Length)
+                    @Html.ValidationMessageFor(model => model.Length)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.CostPerSqFoot, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.CostPerSqFoot)
+                    @Html.ValidationMessageFor(model => model.CostPerSqFoot)
+                </div>
+            </div>
+    
+            
+    
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Find Cost" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+    
+    <blockquote style="margin-top: 15px">
+    <p>This app computes the cost to floor a room given the dimensions of the room and cost per square foot of the material.</p>
+</blockquote>

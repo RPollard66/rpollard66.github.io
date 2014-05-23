@@ -1,0 +1,7 @@
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Operations\bin\Debug\AppLabs.Operations.dll
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Operations\bin\Debug\AppLabs.Operations.pdb
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Operations\bin\Debug\AppLabs.DTOs.dll
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Operations\bin\Debug\AppLabs.DTOs.pdb
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Operations\obj\Debug\AppLabs.Operations.csprojResolveAssemblyReference.cache
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Operations\obj\Debug\AppLabs.Operations.dll
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Operations\obj\Debug\AppLabs.Operations.pdb

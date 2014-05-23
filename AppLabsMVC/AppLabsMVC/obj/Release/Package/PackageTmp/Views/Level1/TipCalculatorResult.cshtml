@@ -1,0 +1,30 @@
+﻿@model AppLabs.DTOs.Level1.TipCalculationResult
+
+@{
+    ViewBag.Title = "TipCalculatorResult";
+}
+
+<h1 style="color:ghostwhite ">Tip Calculator</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+            <li>@Html.ActionLink("Tip Calculator", "TipCalculator", "Level1")</li>
+        </ul>
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-sm-12">
+        <p>
+            For your meal of @Model.MealTotal.ToString("C") with a tip of @Model.TipPercent.ToString("P") the tip amount is @Model.TipAmount.ToString("C") for a total cost of @Model.TotalAmount.ToString("C")
+        </p>
+    </div>
+</div>
+

@@ -1,0 +1,43 @@
+﻿@model AppLabs.DTOs.Level2.CountCharsResult
+
+@{
+    ViewBag.Title = "DisplayCountCharsResults";
+}
+
+<h1 style="color:ghostwhite ">Count Characters</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+            <li>@Html.ActionLink("Count Characters", "CountCharacters", "Level2")</li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+<div class="text-center">
+    <span style="font-size: 24px">
+        <p>"@Html.DisplayFor(model => model.Text)" contains:</p>
+    </span>
+    <span style="font-size: 24px">
+        <p>
+            @Html.DisplayFor(model => model.Consonants)- @Html.DisplayNameFor(m => m.Consonants)
+        </p>
+    </span>
+    <span style="font-size: 24px">
+        <p>
+            @Html.DisplayFor(model => model.Vowels)- @Html.DisplayNameFor(m => m.Vowels)
+        </p>
+    </span>
+    <span style="font-size: 24px">
+        <p>
+            @Html.DisplayFor(model => model.Spaces)- @Html.DisplayNameFor(m => m.Spaces)
+        </p>
+    </span>
+</div>

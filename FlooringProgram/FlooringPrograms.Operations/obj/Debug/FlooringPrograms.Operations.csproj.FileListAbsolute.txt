@@ -1,0 +1,11 @@
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\bin\Debug\FlooringPrograms.Operations.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\bin\Debug\FlooringPrograms.Operations.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\bin\Debug\FlooringProgram.Models.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\bin\Debug\FlooringProgram.Models.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\obj\Debug\FlooringPrograms.Operations.csprojResolveAssemblyReference.cache
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\obj\Debug\FlooringPrograms.Operations.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\obj\Debug\FlooringPrograms.Operations.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\bin\Debug\FlooringProgram.Data.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\bin\Debug\Ninject.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\bin\Debug\FlooringProgram.Data.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPrograms.Operations\bin\Debug\Ninject.xml

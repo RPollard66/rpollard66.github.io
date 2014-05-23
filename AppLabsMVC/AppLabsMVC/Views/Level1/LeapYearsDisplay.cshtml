@@ -1,0 +1,33 @@
+﻿@model AppLabsMVC.Models.Level1.LeapYearsResult
+
+@{
+    ViewBag.Title = "LeapYearsDisplay";
+}
+
+<h1 style="color:ghostwhite ">Leap Years</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+            <li>@Html.ActionLink("Leap Years", "LeapYearsRequest", "Level1")</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+
+        @foreach (var item in @Model.LeapYrsList)
+        {
+            <ul>
+                <li>@item.ToString("N")</li>
+            </ul>
+        }
+
+    </div>
+</div>

@@ -1,0 +1,17 @@
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\FlooringPoject.Tests.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\FlooringPoject.Tests.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\FlooringProgram.Data.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\FlooringProgram.Models.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\FlooringPrograms.Operations.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\nunit.framework.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\FlooringProgram.Data.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\FlooringProgram.Models.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\FlooringPrograms.Operations.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\nunit.framework.xml
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\obj\Debug\FlooringPoject.Tests.csprojResolveAssemblyReference.cache
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\obj\Debug\FlooringPoject.Tests.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\obj\Debug\FlooringPoject.Tests.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\FlooringProgram.UI.exe
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\FlooringProgram.UI.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\Ninject.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringPoject.Tests\bin\Debug\Ninject.xml

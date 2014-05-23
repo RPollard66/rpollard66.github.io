@@ -1,0 +1,5 @@
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.Models\bin\Debug\FlooringProgram.Models.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.Models\bin\Debug\FlooringProgram.Models.pdb
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.Models\obj\Debug\FlooringProgram.Models.csprojResolveAssemblyReference.cache
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.Models\obj\Debug\FlooringProgram.Models.dll
+C:\GitHub\RebeccaPollard\FlooringProgram_beckysCopy\FlooringProgram.Models\obj\Debug\FlooringProgram.Models.pdb

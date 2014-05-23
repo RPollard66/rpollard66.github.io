@@ -1,0 +1,36 @@
+﻿@model AppLabs.DTOs.Level2.Fibonacci
+
+@{
+    ViewBag.Title = "DisplayFibonacciSequence";
+}
+
+<h1 style="color:ghostwhite ">Fibonacci Sequence</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+            <li>@Html.ActionLink("Fibonacci Sequence", "FibonacciRequest", "Level2")</li>
+
+        </ul>
+
+    </div>
+</div>
+
+
+
+<div class="text-center">
+
+
+    @foreach (var term in Model.Sequence)
+    {
+
+
+        <span style="font-size: 24px; margin: 10px 10px 10px 10px">  @term </span>
+
+    }
+
+</div>

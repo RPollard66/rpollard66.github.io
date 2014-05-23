@@ -1,0 +1,39 @@
+﻿@model AppLabs.DTOs.Level2.CountCharRequest
+
+@{
+    ViewBag.Title = "CountCharacters";
+}
+
+<h1 style="color:ghostwhite ">Count Characters</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+@using (Html.BeginForm("DisplayCountCharsResults", "Level2", FormMethod.Post, new { role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="text-center">
+        <p>Please enter a word or a string of words:</p>
+        @Html.EditorFor(model => model.UserInput)
+
+        <input type="submit" value="Submit" class="btn btn-default" />
+    </div>
+
+}
+
+<blockquote style="margin-top: 15px">
+    <p>This app counts the number of vowels, consonants, and spaces in a string. **It does not allow for special characters**</p>
+</blockquote>

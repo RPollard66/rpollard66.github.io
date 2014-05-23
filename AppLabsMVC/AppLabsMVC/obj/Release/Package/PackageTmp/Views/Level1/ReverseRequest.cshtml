@@ -1,0 +1,40 @@
+﻿@model AppLabsMVC.Models.Level1.StringRequest
+
+@{
+    ViewBag.Title = "ReverseRequest";
+}
+
+<h1 style="color:ghostwhite ">Reverse String</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+@using (Html.BeginForm("DisplayReversedString", "Level1", FormMethod.Post, new { role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="text-center">
+
+        @Html.EditorFor(model => model.StringToReverse)
+
+        <input type="submit" value="Reverse" class="btn btn-default" />
+    </div>
+
+}
+
+<blockquote style="margin-top: 15px">
+    <p>This app takes in a word or words and reverses the order of the characters.</p>
+</blockquote>
+

@@ -1,0 +1,43 @@
+﻿@model AppLabs.DTOs.Level2.PrimeRequest
+
+@{
+    ViewBag.Title = "NextPrimeQuery";
+}
+
+<h1 style="color:ghostwhite ">Palindrome</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+@using (Html.BeginForm("DisplayNextPrime", "Level2", FormMethod.Post, new { role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="text-center">
+        <p>Please choose any integer:</p>
+        @Html.EditorFor(model => model.Number)
+
+        <input type="submit" value="Submit" class="btn btn-default" />
+    </div>
+
+}
+
+<blockquote style="margin-top: 15px">
+    <p>This app finds the next prime number following the number you choose.</p>
+</blockquote>
+
+
+
+

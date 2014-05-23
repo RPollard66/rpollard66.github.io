@@ -1,0 +1,11 @@
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\bin\Debug\AppLabs.Tests.dll
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\bin\Debug\AppLabs.Tests.pdb
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\bin\Debug\AppLabs.DTOs.dll
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\bin\Debug\AppLabs.Operations.dll
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\bin\Debug\nunit.framework.dll
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\bin\Debug\AppLabs.DTOs.pdb
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\bin\Debug\AppLabs.Operations.pdb
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\bin\Debug\nunit.framework.xml
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\obj\Debug\AppLabs.Tests.csprojResolveAssemblyReference.cache
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\obj\Debug\AppLabs.Tests.dll
+C:\GitHub\RebeccaPollard\AppLabsMVC\AppLabs.Tests\obj\Debug\AppLabs.Tests.pdb

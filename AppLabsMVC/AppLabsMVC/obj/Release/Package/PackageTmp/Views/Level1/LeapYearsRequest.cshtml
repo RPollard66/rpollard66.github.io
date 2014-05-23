@@ -1,0 +1,41 @@
+﻿@model AppLabsMVC.Models.Level1.LeapYearsData
+
+@{
+    ViewBag.Title = "LeapYearsRequest";
+}
+
+<h1 style="color:ghostwhite ">Leap Years</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-1">
+        @using (Html.BeginForm("LeapYearsDisplay", "Level1", FormMethod.Post, new { role = "form" }))
+        {
+            @Html.ValidationSummary()
+            <div class="form-group">
+                <label for="BeginYear">Beginning year</label>
+                @Html.TextBoxFor(m => m.BeginYear, new { @class = "form-control", placeholder = "Enter beginning year" })
+            </div>
+            <div class="form-group">
+                <label for="EndYear">Ending year</label>
+                @Html.TextBoxFor(m => m.EndYear, new { @class = "form-control", placeholder = "Enter ending year" })
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        }
+    </div>
+</div>
+
+<blockquote style="margin-top: 15px">
+    <p>This app finds and lists all the leap years between two given years.</p>
+</blockquote>

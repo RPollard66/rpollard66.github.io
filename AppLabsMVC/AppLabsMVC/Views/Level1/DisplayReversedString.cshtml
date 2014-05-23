@@ -1,0 +1,32 @@
+﻿@model AppLabsMVC.Models.Level1.StringResult
+
+
+@{
+    ViewBag.Title = "DisplayReverseString";
+}
+
+<h1 style="color:ghostwhite ">Reverse String</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+            <li>@Html.ActionLink("Reverse String", "ReverseRequest", "Level1")</li>
+        </ul>
+
+    </div>
+</div>
+
+    <div class="text-center">
+        <span style="font-size: 24px">
+            @Html.DisplayFor(model => model.ReversedString)
+
+        </span>
+    </div>
+
+    }
+    
+    
