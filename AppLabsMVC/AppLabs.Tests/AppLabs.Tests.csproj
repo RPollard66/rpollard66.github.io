@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="CountCharTests.cs" />
     <Compile Include="FibonacciTests.cs" />
+    <Compile Include="LcmTest.cs" />
     <Compile Include="PrimeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringTests.cs" />

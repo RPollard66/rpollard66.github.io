@@ -79,7 +79,7 @@ namespace AppLabsMVC.Controllers
             }
             else
             {
-                return View(list);
+                return View("LeapYearsRequest",model);
             }
 
         }
@@ -94,12 +94,15 @@ namespace AppLabsMVC.Controllers
         public ActionResult DisplayReversedString(StringRequest model)
         {
 
-            var g = new FindStringReverseResult(model.StringToReverse);
-            var result = new StringResult();
+            if (ModelState.IsValid)
+            {
+                var g = new FindStringReverseResult(model.StringToReverse);
+                var result = new StringResult();
+                result.ReversedString = g.Reverse();
+                return View("DisplayReversedString", result);
+            }
+            return View("ReverseRequest", model);
 
-            result.ReversedString = g.Reverse();
-
-            return View("DisplayReversedString", result);
 
         }
 
@@ -112,16 +115,14 @@ namespace AppLabsMVC.Controllers
         [HttpPost]
         public ActionResult FlooringDisplay(FlooringValues values)
         {
-
-            var result = new FlooringCalculator(values);
-            var model = new FlooringTotals();
-
-            model.MaterialCost = result.FindCost();
-            model.LaborCost = result.FindLaborCost();
-            model.TotalCost = model.LaborCost + model.MaterialCost;
-
-            return View(model);
-
+            if (ModelState.IsValid)
+            {
+                var result = new FlooringCalculator(values);
+                var model = new FlooringTotals();
+                model.MaterialCost = result.FindCost();
+                return View(model);
+            }
+            return View("FlooringRequest", values);
         }
 
     }

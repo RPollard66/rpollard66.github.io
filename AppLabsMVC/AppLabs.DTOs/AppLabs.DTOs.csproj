@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,6 +50,7 @@
     <Compile Include="Level2\PalindromeResult.cs" />
     <Compile Include="Level2\PrimeRequest.cs" />
     <Compile Include="Level2\NextPrimeResult.cs" />
+    <Compile Include="Level3\Fractions.cs" />
     <Compile Include="Level4\NumberPlaces.cs" />
     <Compile Include="Level4\Triangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

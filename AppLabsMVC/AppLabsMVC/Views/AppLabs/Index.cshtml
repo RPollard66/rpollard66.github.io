@@ -1,5 +1,4 @@
-﻿
-@model dynamic
+﻿@model dynamic
 
 @{
     ViewBag.Title = "AppLabs";
@@ -36,7 +35,7 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" style="font-size: large" data-toggle="dropdown">Level 3<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li></li>
+                    <li>@Html.ActionLink("Common Denominator", "LcmRequest", "Level3")</li>
                     <li></li>
                 </ul>
             </li>
@@ -45,20 +44,21 @@
                 <ul class="dropdown-menu">
                     <li></li>
                     <li></li>
-                    <li>@Html.ActionLink("PascalsTriangle", "NumRowsRequest", "Level4")</li>
+                    <li>@Html.ActionLink("Pascals Triangle", "NumRowsRequest", "Level4")</li>
                     <li></li>
                     <li>@Html.ActionLink("Write Out Numbers", "ConvertRequest", "Level4")</li>
                 </ul>
             </li>
-            
+
         </ul>
 
     </div>
 </div>
 
 <div class="text-center">
-
-    <img src="http://fc01.deviantart.net/fs50/i/2009/325/1/1/Mountains_Stock_1_by_megstheponystock.jpg" style="width: 67%" alt="Responsive image">
-
+    <div style="font-size: 20px" class="col-sm-4">These "App Labs" are assigned at the beginning of the program, and students work on them in their free time. The labs vary in difficulty and objective, but most are simple practice with algorithms and creating a user interface. There are about 25 to choose from.</div>
+    <div class="col-sm-8">
+        <img src="../../Pictures/measure.jpg"  /> 
+    </div>
 </div>
 

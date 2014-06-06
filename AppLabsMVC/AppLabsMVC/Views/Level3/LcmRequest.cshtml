@@ -1,0 +1,42 @@
+﻿@model AppLabs.DTOs.Level3.Fractions
+
+@{
+    ViewBag.Title = "LcmRequest";
+}
+
+<h1 style="color:ghostwhite ">Common Denominator</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" style="font-size: large" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+@using (Html.BeginForm("LcmResult", "Level3", FormMethod.Post, new { role = "form", novalidate = "true"}))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <div class="text-center">
+
+        <p>@Html.EditorFor(model => model.Input1)</p>
+        <p>@Html.EditorFor(model => model.Input2)</p>
+
+        <input type="submit" value="Submit" class="btn btn-default" />
+    </div>
+
+}
+
+<blockquote style="margin-top: 15px">
+    <p>This app finds the common denominator between two fractions. Please enter the fractions in the form 'a/b' (mixed numbers are also allowed).</p>
+</blockquote>
+
+

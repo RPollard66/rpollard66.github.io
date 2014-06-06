@@ -14,5 +14,10 @@ namespace AppLabsMVC.Controllers
         {
             return View();
         }
+
+        public ActionResult AboutMe()
+        {
+            return View();
+        }
 	}
 }

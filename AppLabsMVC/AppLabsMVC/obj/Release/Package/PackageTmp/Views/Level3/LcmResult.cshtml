@@ -1,0 +1,29 @@
+﻿@model AppLabs.DTOs.Level3.Fractions
+
+@{
+    ViewBag.Title = "LcmResult";
+}
+
+<h1 style="color:ghostwhite ">Common Denominator</h1>
+
+<div class="navbar navbar-inverse col-sm-12">
+
+    <div class="navbar-collapse" data-toggle="collapse" style="font-size: large" data-target=".navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("App Labs", "Index", "AppLabs")</li>
+            <li>@Html.ActionLink("Common Denominator", "LcmRequest", "Level3")</li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+<div class="text-center">
+    <span style="font-size: 24px">
+        
+       The least common denominator of @Model.Input1 and @Model.Input2 is @Html.DisplayFor(model => model.CommonDenom)
+    </span>
+</div>

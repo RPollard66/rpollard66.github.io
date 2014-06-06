@@ -1,4 +1,4 @@
-﻿@model AppLabsMVC.Models.Level4.NumericRequest
+﻿@model AppLabsMVC.Models.Level4.PascalRequest
 
 @{
     ViewBag.Title = "PascalsTriangle";
@@ -8,7 +8,7 @@
 
 <div class="navbar navbar-inverse col-sm-12">
 
-    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+    <div class="navbar-collapse" data-toggle="collapse" style="font-size: large" data-target=".navbar-inverse-collapse">
         <ul class="nav navbar-nav">
 
             <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -22,9 +22,9 @@
     <div class="col-sm-10">
         <h4>Choose the number of rows to print out</h4>
 
-        @using (Html.BeginForm("DisplayPascalsTriangle","Level4", FormMethod.Post, new{role="form"}))
+        @using (Html.BeginForm("DisplayPascalsTriangle", "Level4", FormMethod.Post, new { role = "form", novalidate = "true" }))
         {
-
+            @Html.ValidationSummary()
             @Html.EditorFor(n => n.PascalInput)
 
             <button type="submit" class="btn btn-success">Submit</button>

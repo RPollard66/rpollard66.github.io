@@ -8,7 +8,7 @@
 
 <div class="navbar navbar-inverse col-sm-12">
 
-    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+    <div class="navbar-collapse" data-toggle="collapse" style="font-size: large" data-target=".navbar-inverse-collapse">
         <ul class="nav navbar-nav">
 
             <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -18,14 +18,14 @@
     </div>
 </div>
 
-@using (Html.BeginForm("FlooringDisplay", "Level1", FormMethod.Post, new { role = "form" })) 
+@using (Html.BeginForm("FlooringDisplay", "Level1", FormMethod.Post, new { role = "form", novalidate = "true" })) 
     {
         @Html.AntiForgeryToken()
         
         <div class="form-horizontal">
             <h4>Please enter required values</h4>
             <hr />
-            @Html.ValidationSummary(true)
+           
     
             <div class="form-group">
                 @Html.LabelFor(model => model.Width, new { @class = "control-label col-md-2" })

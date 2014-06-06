@@ -20,6 +20,8 @@ namespace AppLabsMVC.Controllers
             return View();
         }
 
+        
+        
         public ActionResult ConvertRequest()
         {
             var model = new NumericRequest();
@@ -27,36 +29,42 @@ namespace AppLabsMVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult ConvertRequest(NumericRequest req)
+        public ActionResult DisplayResult(NumericRequest req)
         {
-            double input = req.InputNum;
-            var wm = new WordManager();
+            if (ModelState.IsValid)
+            {
+                double input = req.InputNum;
+                var wm = new WordManager();
+                NumberPlaces places = wm.SplitNumber(input);
+                var model = new NumbersAsWordsResponse();
+                model.FinalResult = wm.FormatOutput(places);
+                return View(model);
+            }
+            return View("ConvertRequest", req);
 
-            NumberPlaces places = wm.SplitNumber(input);
-            var model = new NumbersAsWordsResponse();
 
-
-            model.FinalResult = wm.FormatOutput(places);
-
-            return View("DisplayResult", model);
         }
 
+        
+        
         public ActionResult NumRowsRequest()
         {
-            var model = new NumericRequest();
+            var model = new PascalRequest();
             return View(model);
         }
 
         [HttpPost]
-        public ActionResult DisplayPascalsTriangle(NumericRequest numRows)
+        public ActionResult DisplayPascalsTriangle(PascalRequest numRows)
         {
-            int input = numRows.PascalInput;
-            var pc = new PascalCalculator();
-            var model = new Triangle();
-
-            model.Elements = pc.Calculate(input);
-
-            return View("DisplayPascalsTriangle", model);
+            if (ModelState.IsValid)
+            {
+                int input = numRows.PascalInput;
+                var pc = new PascalCalculator();
+                var model = new Triangle();
+                model.Elements = pc.Calculate(input);
+                return View("DisplayPascalsTriangle", model);
+            }
+            return View("NumRowsRequest", numRows);
 
         }
     }

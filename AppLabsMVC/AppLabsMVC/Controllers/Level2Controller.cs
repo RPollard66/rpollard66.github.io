@@ -19,6 +19,7 @@ namespace AppLabsMVC.Controllers
             return View();
         }
 
+        
         public ActionResult FibonacciRequest()
         {
             var model = new FibonacciRequest();
@@ -26,13 +27,19 @@ namespace AppLabsMVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult DisplayFibonacciSequence(int num)
+        public ActionResult DisplayFibonacciSequence(FibonacciRequest req)
         {
-            var model=new Fibonacci();
-            model.Sequence = new FibonacciGenerator().Generate(num);
-            return View(model);
 
+            if (ModelState.IsValid)
+            {
+                var model = new Fibonacci();
+                model.Sequence = new FibonacciGenerator().Generate(req.num);
+                return View(model);
+            }
+            return View("FibonacciRequest",req);
         } 
+        
+        
         
         public ActionResult PalindromeQuery()
         {
@@ -43,13 +50,17 @@ namespace AppLabsMVC.Controllers
         [HttpPost]
         public ActionResult PalindromeVerdict(PalindromeRequest input)
         {
-           
-            var model = new PalindromeResult();
-
-            model.Verdict = new PalindromeDetector().ReverseAndCheck(input.UserChoice);
-            return View(model);
+            if (ModelState.IsValid)
+            {
+                var model = new PalindromeResult();
+                model.Verdict = new PalindromeDetector().ReverseAndCheck(input.UserChoice);
+                return View(model);
+            }
+            return View("PalindromeQuery",input);
         }
 
+        
+        
         public ActionResult NextPrimeQuery()
         {
             var model = new PrimeRequest();
@@ -59,12 +70,18 @@ namespace AppLabsMVC.Controllers
         [HttpPost]
         public ActionResult DisplayNextPrime(PrimeRequest p)
         {
-            var f = new FindNextPrime();
-            var model = new NextPrimeResult();
-            model.NextPrime = f.NextPrime(p.Number);
-            return View(model);
+            if (ModelState.IsValid)
+            {
+                var f = new FindNextPrime();
+                var model = new NextPrimeResult();
+                model.NextPrime = f.NextPrime(p.Number);
+                return View(model);
+            }
+            return View("NextPrimeQuery",p);
         }
 
+        
+        
         public ActionResult CountCharacters()
         {
             var model = new CountCharRequest();
@@ -74,10 +91,14 @@ namespace AppLabsMVC.Controllers
         [HttpPost]
         public ActionResult DisplayCountCharsResults(CountCharRequest req)
         {
-            var c = new CharacterCounter();
-            var model = new CountCharsResult();
-            model = c.GetResults(req.UserInput);
-            return View(model);
+            if (ModelState.IsValid)
+            {
+                var c = new CharacterCounter();
+                var model = new CountCharsResult();
+                model = c.GetResults(req.UserInput);
+                return View(model);
+            }
+            return View("CountCharacters",req);
         }
     }
 }

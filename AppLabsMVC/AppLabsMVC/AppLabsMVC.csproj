@@ -112,8 +112,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Level1Controller.cs" />
     <Compile Include="Controllers\Level2Controller.cs" />
+    <Compile Include="Controllers\Level3Controller.cs" />
     <Compile Include="Controllers\Level4Controller.cs" />
-    <Compile Include="Controllers\PersonalController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -126,6 +126,7 @@
     <Compile Include="Models\Level2\PalindromeRequest.cs" />
     <Compile Include="Models\Level4\NumbersAsWordsResponse.cs" />
     <Compile Include="Models\Level4\NumericRequest.cs" />
+    <Compile Include="Models\Level4\PascalRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -157,7 +158,10 @@
     <Content Include="Views\Level2\CountCharacters.cshtml" />
     <Content Include="Views\Level2\DisplayCountCharsResults.cshtml" />
     <Content Include="Views\AppLabs\Index.cshtml" />
-    <Content Include="Views\Personal\Index.cshtml" />
+    <Content Include="Views\Home\AboutMe.cshtml" />
+    <Content Include="Views\Level3\Index.cshtml" />
+    <Content Include="Views\Level3\LcmRequest.cshtml" />
+    <Content Include="Views\Level3\LcmResult.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -8,7 +8,7 @@
 
 <div class="navbar navbar-inverse col-sm-12">
 
-    <div class="navbar-collapse" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+    <div class="navbar-collapse" data-toggle="collapse" style="font-size: large" data-target=".navbar-inverse-collapse">
         <ul class="nav navbar-nav">
 
             <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -20,9 +20,5 @@
 </div>
 
 <div class="text-center">
-
     <p>The cost for materials is @String.Format("{0:C}", @Model.MaterialCost)</p>
-    <p>The cost for labor is @String.Format("{0:C}", @Model.LaborCost)</p><br/>
-    <p>Total cost is @String.Format("{0:C}", @Model.TotalCost)</p>
-
     </div>

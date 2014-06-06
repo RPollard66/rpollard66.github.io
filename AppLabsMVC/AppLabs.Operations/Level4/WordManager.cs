@@ -47,6 +47,7 @@ namespace AppLabs.Operations.Level4
 
         public NumberPlaces SplitNumber(double req)
         {
+            
             var result = new NumberPlaces();
 
             result.Huns = Math.Floor(req / 100);
